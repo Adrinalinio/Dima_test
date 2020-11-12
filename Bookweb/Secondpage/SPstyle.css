@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat',
+        sans-serif;
+}
+
+a {
+    display: inline-block;
+    transition: all .4s;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+header {
+    background-color: #2F2E2F;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+header .container ul {
+    list-style: none;
+    display: flex;
+    padding-left: 260px;
+}
+
+.container a {
+    color: #fff;
+}
+
+header ul a {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container .logo {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    max-height: 170px;
+    max-width: 160px;
+}
+
+header a:hover {
+    color: aqua;
+}
+
+header .button {
+    border: 1px solid#fff;
+    padding: 12px 50px;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    border: 1px solid #fff;
+}
+
+header .button:hover {
+    background-color: white;
+    color: black;
+}
+
+.reader_choose {
+    background-image: url(/images/BG.png);
+    padding-top: 166px;
+    padding-bottom: 71px;
+    width: 100%;
+    background-size: cover;
+    margin-bottom: 130px;
+}
+
+.reader_choose .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reader_choose .container .left {
+    max-width: 400px;
+    margin-right: 377px;
+}
+
+.reader_choose .left h1 {
+    font-size: 40px;
+    line-height: 49px;
+    color: #191719;
+    padding-bottom: 18px;
+}
+
+
+.reader_choose .left p {
+    font-size: 21px;
+    line-height: 26px;
+    color: #191719;
+    margin-bottom: 58px;
+}
+
+.reader_choose .left .button {
+    border: 1px solid none;
+    background-color: #9A8464;
+    padding: 30px 100px;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    transition: all .4s;
+}
+
+.reader_choose .left .button:hover {
+    background-color: green;
+
+}
+
+.catalog h2 {
+    font-size: 42px;
+    line-height: 49px;
+    padding-bottom: 60px;
+}
+
+.catalog .menu {
+    list-style: none;
+    display: flex;
+    padding-bottom: 60px;
+}
+
+.catalog .menu li {
+    border: 1px solid#191719;
+    padding: 30px 68px;
+    background-color: #fff;
+    transition: all .4s;
+}
+
+.catalog .menu li:hover {
+    background-color: #9A8464;
+}
+
+.catalog .menu a {
+    color: #191719;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    line-height: 22, 05px;
+    font-weight: 600;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3);
+    grid-gap: 25px;
+    padding-bottom: 60px;
+
+}
+
+.grid div {
+    width: 275px;
+    height: 526px;
+}
+
+.grid div img {
+    padding-bottom: 30px;
+}
+
+.grid div h5 {
+    font-size: 16px;
+    line-height: 24px;
+    color: #C4C4C4;
+    padding-bottom: 10px;
+}
+
+.grid div strong {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #191719;
+}
+
+.div_button {
+    display: flex;
+    justify-content: center;
+}
+
+.catalog .container .button {
+    border: 1px solid#9A8464;
+    background-color: #9A8464;
+    padding: 25px 40px;
+    margin transition: all .4s;
+
+}
+
+.catalog .container .button:hover {
+    background-color: darkorchid;
+}
+
+.contacts {
+    background-image: url(/images/image%2069.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 130px;
+}
+
+.contacts .cHead h2 {
+    padding-top: 123px;
+    font-size: 42px;
+    line-height: 49px;
+    text-align: center;
+    color: #191719;
+    padding-bottom: 60px;
+}
+
+
+.contacts .contacts_content {
+    background-color: #fff;
+    max-width: 1170px;
+    display: flex;
+}
+
+.contacts .contacts_content .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+.contacts_content .left h5 {
+    padding-bottom: 14px;
+
+}
+
+.contacts_content .left a {
+    font-size: 22px;
+    line-height: 26px;
+    color: #191719;
+    text-decoration: none;
+    padding-bottom: 30px;
+    transition: all .4sec;
+}
+
+.contacts_content .left a:hover {
+    color: cadetblue;
+
+}
+
+.contacts_content .left h5 {
+    font-size: 18px;
+    line-height: 21px;
+    color: #191719;
+}
+
+.contacts_content .left .social {
+    display: flex;
+}
+
+.contacts_content .social img {
+    transition: all .4s;
+    margin-right: 10px;
+}
+
+.contacts_content .social img:hover {
+    background-color: aqua;
+}
+
+footer {
+    width: 100%;
+    background-color: #2F2E2F;
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer_div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 308px;
+    padding-right: 375px;
+    padding-top: 31px;
+}
+
+
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer ul li {
+    text-decoration: none;
+    width: 50%;
+}
+
+footer ul a {
+    font-size: 16px;
+    line-height: 36px;
+    color: #FFFFFF;
+    opacity: 0.6;
+    transition: all .4sec;
+}
+
+footer ul a:hover{
+    color: aqua;
+}
+
+footer .footer_contact {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer_contact a {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 30px;
+    color: #FFFFFF;
+    transition: all .4s;
+    padding-bottom: 10px;
+}
+
+footer .footer_contact a:hover {
+    color: cadetblue;
+}
+
+footer .footer_contact .img {
+    display: flex;
+}
+
+footer .img img {
+    opacity: 0.6;
+    margin-right: 10px;
+    transition: all .4s;
+}
+
+footer .img img:hover {
+    background-color: aqua;
+}
+
+.footer_div .button {
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 20px 70px;
+    transition: all .4;
+}
+
+.footer_div .button:hover{
+    background-color: aqua;
+}
