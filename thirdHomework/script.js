@@ -17,19 +17,16 @@ c.addEventListener('click', function () {
 let e = document.getElementById('words_counter');
 let r = document.getElementsByClassName('second')[0];
 let f = document.getElementsByClassName('counter')[0];
-r = r.textContent.split(' ');
-r = parseInt(r)
-console.log(r);
+let counter = r.textContent.split(' ').length;
+console.log(counter);
 e.addEventListener('click', function () {
-    f += r;
-    
+    f.textContent += counter;
 });
 
 let t = document.getElementById('get_text');
 let y = document.getElementsByClassName('second')[0];
 t.addEventListener('click', function () {
-let l = y.textContent;
+    let l = y.textContent;
     alert(l);
-    y.removeAttribute[0];
+    y.textContent="";
 });
-
